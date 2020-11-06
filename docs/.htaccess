@@ -1,4 +1,0 @@
-AuthUserFile DJ13423.github.io/
-AuthType Basic
-AuthName "My Secret Folder"
-Require valid-user
