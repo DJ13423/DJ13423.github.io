@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+
+    </Head>
+
+    <body>
+        <div>
+            <button onclick="scrollFunction1()">>scroll to element-1</button>
+            <br>
+            <button onclick="scrollFunction2()"> Scroll to element-2 </button>
+            <br>
+            <br>
+            <br>
+            <div id="element">
+              <h2> 
+                Click on the scroll button
+              </h2>
+              <div id="el1">
+                <h2>Element-1</h2> </div>
+              <div id="el2">
+                <h2>Element-2</h2> </div>
+            </div>
+          </div>
+          <script>
+            function scrollFunction1() {
+              let e = document.getElementById("el1");
+              e.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+                inline: 'start'
+              });
+            }
+            function scrollFunction2() {
+              let e = document.getElementById("el2");
+              // This ends the block to the window 
+              // bottom and also aligns the view to the center 
+              e.scrollIntoView({
+                block: 'end',
+                behavior: 'smooth',
+                inline: 'center'
+              });
+            }
+          </script>
+    </body>
+</html>
