@@ -1,7 +1,7 @@
 var loader;
 
 function loadNow() {
-    var timer = 50
+    timer = 0
     if (timer <= 0) {
         displayContent();
     } 
