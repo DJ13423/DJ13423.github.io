@@ -1,5 +1,6 @@
 #loader {
     position: fixed;
+    font-stretch: expanded;
     size: 5000px;
     width: 50%;
     height: 50%;
