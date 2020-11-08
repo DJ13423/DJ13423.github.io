@@ -1,13 +1,12 @@
 var loader;
 
-function loadNow() {
-    timer = 0
-    if (timer <= 0) {
+function loadNow(opacity) {
+    if (opacity <= 0) {
         displayContent();
-    } 
-    else {
+    } else {
+        loader.style.opacity = opacity;
         window.setTimeout(function() {
-        timer - 1;
+            loadNow(opacity - 0.05);
         }, 50);
     }
 }
