@@ -3,10 +3,11 @@ var loader;
 function loadNow(opacity) {
     if (opacity <= 0) {
         displayContent();
-    } else {
+    } 
+    else {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
-            loadNow(opacity - 0.05);
+            loadNow(opacity - 0.01);
         }, 50);
     }
 }
