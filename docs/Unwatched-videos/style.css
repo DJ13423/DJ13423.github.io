@@ -15,12 +15,3 @@ html, body {
     overflow: visible;
     background: #fff url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center center;
 }
-
-h1 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: poppins;
-}
