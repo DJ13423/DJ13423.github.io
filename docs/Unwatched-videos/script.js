@@ -8,7 +8,7 @@ function loadNow() {
     else {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
-            loadNow(timer - 0.1);
+        timer - 0.1;
         }, 50);
     }
 }
