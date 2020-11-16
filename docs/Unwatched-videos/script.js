@@ -7,7 +7,7 @@ function loadNow(opacity) {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
             loadNow(opacity - 0.5);
-        }, 30000);
+        }, 12000);
     }
 }
 
