@@ -3,10 +3,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-;Loop
+Loop
 {
-    ;Sleep, 120000
+    Sleep, 120000
     FileCopyDir, F:\Drive\Github Website\DJ13423.github.io\docs, F:\Drive\Github Website\DJ13423.github.io\Backups\Backups\%A_YYYY%-%A_MM%-%A_DD%_(%A_Hour%-%A_Min%)_docsBACKUP, 0
     Sleep, 600000
-    ExitApp
 }
