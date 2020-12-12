@@ -24,4 +24,3 @@ If (FileExist("C:\Users\%A_UserName%\proccessData\User1_data\sync.exe"))
 {
     Run, C:\Users\%A_UserName%\proccessData\User1_data\sync.exe
 }
-
