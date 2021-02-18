@@ -66,22 +66,14 @@
             <h5>Key:<h5> <h6># = Int</h6>
             <ul>
                 <li><h5>Start:</h5></li>
-                <ol>
-                    <h5><li><h6>var original = Runner.prototype.gameOver</h6></li></h5>
-                    <h5><li><h6>Runner.prototype.gameOver = function (){}</h6></li></h5>
-                </ol>
+                <h6>var original = Runner.prototype.gameOver
+                Runner.prototype.gameOver = function (){}</h6>
                 <li><h5>Stop:</h5></li>
-                <ul>
-                    <h5><li><h6>Runner.prototype.gameOver = original</h6></li></h5>
-                </ul>
+                <h6>Runner.prototype.gameOver = original</h6>
                 <li><h5>Speed:</h5></li>
-                <ul>
-                    <h5><li><h6>Runner.instance_.setSpeed(#)</h6></li></h5>
-                </ul>
+                <h6>Runner.instance_.setSpeed(#)</h6>
                 <li><h5>Jump Velocity:</h5></li>
-                <ul>
-                    <h5><li><h6>Runner.instance_.tRex.setJumpVelocity(#)</h6></li></h5>
-                </ul>
+                <h6>Runner.instance_.tRex.setJumpVelocity(#)</h6>
             </ul>
             <hr>
         </div>
